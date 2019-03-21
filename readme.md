@@ -8,4 +8,4 @@
 ## Support on Beerpay
 Hey dude! Help me out for a couple of :beers:!
 
-[![Beerpay](https://beerpay.io/JsonDeveloper/StreamDonations/badge.svg?style=beer-square)](https://www.donationalerts.com/r/jquery)  [![Beerpay](https://beerpay.io/JsonDeveloper/StreamDonations/make-wish.svg?style=flat-square)](https://www.donationalerts.com/r/jquery)
+[![SupportMe](http://stopbullyingdayton.org/wp-content/uploads/2018/05/fixed-donate.png)](https://www.donationalerts.com/r/jquery)
