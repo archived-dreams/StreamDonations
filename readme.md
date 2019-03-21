@@ -7,4 +7,4 @@
 
 ## Support me
 Hey dude! Help me out for a couple of :beers:!
-<p align="center"><a href="https://www.donationalerts.com/r/jquery)"><img src="http://stopbullyingdayton.org/wp-content/uploads/2018/05/fixed-donate.png" width="200"></a></p>
+<p align="center"><a href="https://www.donationalerts.com/r/jquery"><img src="http://stopbullyingdayton.org/wp-content/uploads/2018/05/fixed-donate.png" width="200"></a></p>
