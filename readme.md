@@ -14,7 +14,6 @@ Hey dude! Help me out for a couple of :beers:!
 # Features
     PayPal Integration
     Multilanguage support
-    Free help installing the script
     Yandex SpeechKit integration (19 languages, 27 voices)
     Authorization (Via: Twitch, YouTube, Mixer)
     Donation statistics (In the user panel and admin panel)
