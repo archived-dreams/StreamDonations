@@ -3,9 +3,8 @@
 <a href="https://github.com/JsonDeveloper/StreamDonations/wiki/Screanshots">[More Screanshots]</a>
 
 # Install Guide
+<a href="https://JsonDeveloper.github.com/StreamDonations">[Installation guide page]</a>
 
-
-## Support on Beerpay
+## Support me
 Hey dude! Help me out for a couple of :beers:!
-
-[![SupportMe](http://stopbullyingdayton.org/wp-content/uploads/2018/05/fixed-donate.png)](https://www.donationalerts.com/r/jquery)
+<p align="center"><a href="https://www.donationalerts.com/r/jquery)"><img src="http://stopbullyingdayton.org/wp-content/uploads/2018/05/fixed-donate.png" width="200"></a></p>
