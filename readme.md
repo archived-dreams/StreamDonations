@@ -5,7 +5,21 @@
 # Install Guide
 <a href="https://JsonDeveloper.github.com/StreamDonations">[Installation guide page]</a>
 
-## Support me
+# Support me
 Hey dude! Help me out for a couple of :beers:!
 <p align="center"><a href="https://www.donationalerts.com/r/jquery"><img src="http://stopbullyingdayton.org/wp-content/uploads/2018/05/fixed-donate.png" width="200"></a></p>
 <i>Avalable methods: PayPal, MasterCard/Visa, QIWI, VKpay, PaySafe, Webmoney, YandexMoney.</i>
+
+# Features
+    PayPal Integration
+    Multilanguage support
+    Free help installing the script
+    Yandex SpeechKit integration (19 languages, 27 voices)
+    Authorization (Via: Twitch, YouTube, Mixer)
+    Donation statistics (In the user panel and admin panel)
+    List of all donations and the ability to add manually
+    Donation page (With the possibility of customization)
+    Event List (Widget)
+    Alert Box (Widget)
+    Donation Goal (Widget)
+
