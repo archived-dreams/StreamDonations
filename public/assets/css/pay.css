@@ -1,0 +1,70 @@
+body {
+    background: rgba(0, 0, 0, 0) url("/storage/backgrounds/patterns/default.png") repeat scroll center center;
+}
+.container {
+    max-width: 640px;
+    margin-top: 30px;
+    background-color: #fff;
+    box-shadow: 0 10px 15px rgba(55,71,79,.1);
+    padding: 0px;
+    border-radius: 3px;
+    position: relative;
+}
+.invoice-info {
+    padding: 20px;
+    padding-bottom: 0px;
+}
+.status {
+    position: absolute;
+    top: 18px;
+    right: 14px;
+}
+.invoice-info .input-group {
+}
+h3 {
+    text-align: center;
+}
+.pay-header {
+    background-color: #f9fafa;
+    border-bottom: 1px solid #ebeef0;
+    display: block;
+    width: 100%;
+    padding: 26px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.paymethod-buttons {
+    text-align: center;
+    display: block;
+    width: 100%;
+    background-color: #f9fafa;
+    border-top: 1px solid #ebeef0;
+    padding: 30px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.content-container {
+    padding: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+.pay-button {
+    margin-bottom: 20px;
+}
+.pay-footer {
+    color: #929698;
+    text-align: center;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.pay-footer a {
+    color: #929698;
+}
+.pay-footer a:hover, .pay-footer a:active {
+    color: #fff;
+    text-decoration: none;
+}

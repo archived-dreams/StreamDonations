@@ -1,0 +1,162 @@
+.container {
+    max-width: 640px;
+    margin-top: 30px;
+    background-color: #fff;
+    box-shadow: 0 10px 15px rgba(55,71,79,.1);
+    padding: 0px;
+    border-radius: 3px;
+}
+.container .banner {
+    height: 140px;
+    position: relative;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.container .banner .avatar {
+    width: 90px;
+    height: 90px;
+    margin: 25px;
+    float: left;
+}
+.container .banner .name {
+    color: #383838;
+    background: rgba(255,255,255,0.8);
+    font-size: 24px;
+    padding: 5px;
+    display: inline-block;
+    float: left;
+    margin: 0px;
+    margin-top: 25px;
+}
+.container .banner .link {
+    color: #fff;
+    font-size: 15px;
+    float: right;
+    text-shadow: 1px 1px 6px #000;
+    line-height: 33px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+}
+.container .banner .link:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.container .banner .link:active {
+    text-shadow: 1px 1px 6px #000;
+    color: #7e8689;
+    outline: none;
+    text-decoration: none;
+}
+.container .content {
+    padding: 20px;
+}
+.donation-footer {
+    color: #929698;
+    text-align: center;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.donation-footer a {
+    color: #929698;
+}
+.donation-footer a:hover, .donation-footer a:active {
+    color: #fff;
+    text-decoration: none;
+}
+textarea { resize: none; }
+.maxlength {
+    position: absolute;
+    bottom: 12px;
+    right: 44px;
+    color: #929698;
+    font-size: 13px;
+    letter-spacing: .7px;
+}
+.kappa {
+    position: absolute;
+    bottom: 10px;
+    right: 14px;
+}
+.kappa img {
+    width: 23px;
+}
+.emotes {
+    display: block; 
+    width: 250px; 
+    height: 218px; 
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+.emotes img {
+    width: 43px;
+    height: auto;
+    padding: 7px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.emotes img:hover {
+    border: 1px solid #ebeef0;
+    background: #f9fafa;
+}
+.form-footer {
+    margin-left: -20px;
+    margin-bottom: -20px;
+    margin-top: 20px;
+    text-align: center;
+    width: calc(100% + 40px);
+    background-color: #f9fafa;
+    border-top: 1px solid #ebeef0;
+    padding: 30px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    position: relative;
+}
+#submit {
+    border-width: 0px;
+    border-radius: 3px;
+}
+#payForm {
+    display: none;
+}
+.back {
+    float: right;
+    padding: 10px 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: transparent;
+    border-width: 0px;
+    letter-spacing: 1.5px;
+}
+.total {
+    margin-bottom: 5px;
+    color: #37474f;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.total-label {
+    text-transform: uppercase;
+    color: #929698;
+    letter-spacing: 1.25px;
+    font-size: 11px;
+    font-weight: 600;
+}
+.payment-methods {
+    margin-top: 20px;
+}
+.payment-methods img {
+    float: right;
+    height: 25px;
+    padding: 4px;
+    margin-top: -2px;
+    background: #f8f7f5;
+    border-radius: 3px;
+}
+.list-group-item b {
+    color: #37474f !important;
+}
