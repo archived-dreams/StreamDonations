@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Stream Tips Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+
+		<h1 class="center">&ldquo;Stream Tips&rdquo;</h1>
+
+		<hr>
+
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#install0">Install - 0 steap</a></li>
+			<li><a href="#install1">Install - 1 steap</a></li>
+			<li><a href="#install2">Install - 2 steap</a></li>
+			<li><a href="#configuration">Configuration</a></li>
+			<li><a href="#db">Data base</a></li>
+			<li><a href="#sources">Sources and Credits</li>
+		</ol>
+
+		<hr>
+
+		<h3 id="install0"><strong>A) Install - 0 steap</strong> - <a href="#toc">top</a></h3>
+		<p>
+			To run the script, we recommend using a VDS server or a dedicated server.
+		</p>
+
+		<p>
+			<b>Requirements</b>:<br>
+			<ul>
+				<li>PHP &gt;= 5.6.4</li>
+				<li>OpenSSL PHP Extension</li>
+				<li>PDO PHP Extension</li>
+				<li>Mbstring PHP Extension</li>
+				<li>Tokenizer PHP Extension</li>
+				<li>XML PHP Extension</li>
+				<li><a href="https://getcomposer.org/">Composer</a></li>
+			</ul>
+		</p>
+
+		<hr>
+
+		<h3 id="install1"><strong>B) Install - 1 steap</strong> - <a href="#toc">top</a></h3>
+
+		<p>Copy/Upload the folder and files to your web server using cPanel or FTP</p>
+		<p><a href="assets/images/TransferAndUnzip.gif"><img src="assets/images/TransferAndUnzip.gif" style="max-width: 100%;"></a></p>
+
+		<p>
+			<b>Install Laravel components with composer</b><br>
+			<code># composer update</code>
+		</p>
+		<p><a href="assets/images/ComposerUpdate.gif"><img src="assets/images/ComposerUpdate.gif" style="max-width: 100%;"></a></p>
+
+		<p>
+			<b>Laravel postinstall</b><br>
+			<code>
+				# php artisan key:generate<br>
+				# php artisan storage:link
+			</code>
+		</p>
+		<p><a href="assets/images/PostInstall.gif"><img src="assets/images/PostInstall.gif" style="max-width: 100%;"></a></p>
+
+		<hr>
+
+		<h3 id="install2"><strong>C) Install - 2 steap</strong> - <a href="#toc">top</a></h3>
+		<p>Create mysql database, database user and grant all permission to user for this database.</p>
+		<p><a href="assets/images/CreateDatabase.gif"><img src="assets/images/CreateDatabase.gif" style="max-width: 100%;"></a></p>
+
+		<hr>
+
+		<h3 id="configuration"><strong>D) Configuration</strong> - <a href="#toc">top</a></h3>
+		<p>All settings are in the .env file</p>
+
+		<p>
+			<b>APP_NAME</b> - You Application Name<br>
+			<i>Example: APP_NAME="Tools"</i>
+		</p>
+
+		<p>
+			<b>APP_ENV</b> - Status of your application (local - for development, production - Production)<br>
+			<i>Example: APP_ENV=local</i>
+		</p>
+
+		<p>
+			<b>APP_DEBUG</b> - Debug mode (true or false)<br>
+			<i>Example: APP_ENV=true</i>
+		</p>
+
+		<p>
+			<b>APP_URL</b> - Full url<br>
+			<i>Example: APP_URL=http://donations.klybok.net/</i>
+		</p>
+
+		<p>
+			<b>DB_*</b> - SQL Server Configuration<br>
+			<i>Manual: <a href="https://laravel.com/docs/5.4/database">https://laravel.com/docs/5.4/database</a></i>
+		</p>
+
+		<p>
+			<b>Mixer</b><br>
+			<a href="https://mixer.com/lab/oauth">https://mixer.com/lab/oauth</a>
+		</p>
+
+		<p>
+			<b>TWITCH</b><br>
+			<a href="https://dev.twitch.tv/docs/v5/guides/authentication/">Guide</a><br>
+			<a href="assets/images/twitch.png"><img src="assets/images/twitch.png" style="max-width: 100%;"></a>
+		</p>
+
+		<p>
+			<b>YOUTUBE</b><br>
+			<a href="https://developers.google.com/youtube/v3/guides/auth/server-side-web-apps">Guide</a><br>
+			<i>
+				Example:<br>
+				YOUTUBE_KEY=69320797015-cc897arel2707o28r3430pqqt96f5nhi.apps.googleusercontent.com<br>
+				YOUTUBE_SECRET=1s5KtrDWIwaMOr8LPOUPGxFm<br>
+				YOUTUBE_REDIRECT_URI=http://donations.klybok.net/auth/youtube/callback
+			</i>
+		</p>
+
+		<hr>
+
+		<h3 id="db"><strong>E) Data base.</strong> - <a href="#toc">top</a></h3>
+		<p>Create Datatables</b>
+		<p><a href="assets/images/CreateDatabase.gif"><img src="assets/images/CreateDatabase.gif" style="max-width: 100%;"></a></p>
+		<p>
+			Run the following command in the console:<br>
+			<code># php artisan migrate</code><br>
+		</p>
+		<p>
+			<b>Admin permissions</b> -  In datatable <code>`users`</code> set <code>`level`</code> = admin
+		</p>
+
+		<hr>
+
+		<p><a href="#toc">Go To Table of Contents</a></p>
+
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
