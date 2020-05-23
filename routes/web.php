@@ -41,8 +41,8 @@
 }
 
 /* Donation page */ {
-    Route::get('/d/{service}/{id}', ['uses' => 'DonationsController@getDonate', 'as' => 'donate'])->where(['service' => '[A-Za-z]+', 'id' => '[A-Za-z0-9]+']);
-    Route::post('/d/{service}/{id}', ['uses' => 'DonationsController@postDonate', 'as' => 'donate.post'])->where(['service' => '[A-Za-z]+', 'id' => '[A-Za-z0-9]+']);
+    Route::get('/d/{service}/{id}', ['uses' => 'DonationsController@getDonate', 'as' => 'donate'])->where(['service' => '[A-Za-z]+', 'id' => '[A-Za-z0-9-_]+']);
+    Route::post('/d/{service}/{id}', ['uses' => 'DonationsController@postDonate', 'as' => 'donate.post'])->where(['service' => '[A-Za-z]+', 'id' => '[A-Za-z0-9-_]+']);
 }
 
 /* Payments */ {
