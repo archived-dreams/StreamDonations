@@ -151,8 +151,15 @@ function escapeRegExp(string) {
 function removeBadWords(string, voice) {
     if (string === null) string = '';
 	var replacment = (typeof voice != 'undefined' && voice) ? '   ' : '***';
-    if (typeof bad_words !== 'undefined' && bad_words.length > 0) {
-        return string.replace(new RegExp('(' + bad_words.join('|') + ')', 'gim'), replacment);
+	
+	if (typeof bad_words !== 'undefined') {
+    	var words = bad_words.filter(function(value) {
+            return String(typeof value === 'string' ? value : '').trim() !== '';
+        });
+        
+        if (words.length > 0) {
+            return string.replace(new RegExp('(' + bad_words.join('|') + ')', 'gim'), replacment);
+        }
     }
     return string;
 }
