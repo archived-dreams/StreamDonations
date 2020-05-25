@@ -106,5 +106,15 @@ class User extends Authenticatable
         }
         return config('app.timezone');
     }
-    
+
+    /**
+     * Convert words black list to string
+     *
+     * @param  string  $value
+     * @return string
+     */
+    public function getBlackListWordsAttribute($value)
+    {
+        return $value ? (string) $value : '';
+    }
 }
