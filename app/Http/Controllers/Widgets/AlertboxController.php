@@ -98,7 +98,7 @@ class AlertboxController extends Controller
 
         if ($request->{'new-token'}) {
             $data['token'] = str_random(45);
-            $result['widget'] = route('widgets.aletbox.widget', [ 'token' => $data['token']]);
+            $result['widget'] = route('widgets.alertbox.widget', [ 'token' => $data['token']]);
         }
         
         AlertboxSettings::where('user_id', Auth::user()->id)->update($data);
