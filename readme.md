@@ -4,7 +4,7 @@ Service (Based on Laravel 5.4) for receiving donations on streams.
 <a href="https://github.com/JsonDeveloper/StreamDonations/wiki/Screanshots">[More Screanshots]</a>
 
 # Install Guide
-<a href="https://JsonDeveloper.github.com/StreamDonations">[Installation guide page]</a>
+<a href="https://jsondeveloper.github.io/StreamDonations">[Installation guide page]</a>
 
 # Support me
 Hey dude! Help me out for a couple of :beers:!
